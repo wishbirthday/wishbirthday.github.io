@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy | Birthday</title>
+
+    <link rel="icon" href="./favicon-32x32.png">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Comforter&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Comforter', cursive;
+}
+
+.container{
+  position: relative;
+  width: 100%;
+  background: rgb(27, 173, 76);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.word{
+  color: #fff;
+  letter-spacing: 5px;
+  font-size: 8em;
+  position: absolute;
+  text-align: center;
+  animation: word 15s infinite ease-in-out;
+}
+
+.word:nth-child(1){
+  animation-delay: -15s;
+}
+
+.word:nth-child(2){
+  animation-delay: -11s;
+}
+
+
+.word:nth-child(3){
+  animation-delay: -8s;
+}
+
+.word:nth-child(4){
+  animation-delay: -5s;
+}
+
+
+@keyframes word {
+  0%, 5%, 100% {
+    filter: blur(0px);
+    opacity: 1;
+  }
+  
+  20%, 80%{
+    filter: blur(35px);
+    opacity: 0;
+  }
+}
+
+.gif{
+    border-radius: 50%;
+    max-width: 100%;
+}
+
+.poojan-1{
+    max-width: 100%;
+    width: 200px;
+}
+
+.word p{
+    font-size: 10rem;
+}
+
+.gif, .poojan-1{
+    box-shadow: 5px 3px 10px 5px #d8d8d8;
+}
+
+@media (max-width: 767px){
+    .word p{
+        font-size: 5rem;
+    }
+     .poojan-1{
+        width: 100px;
+    }
+    .gif{
+        width: 200px;
+    }
+}
+
+</style>
+</head>
+<body>
+    <!--- This is copied from  https://www.instagram.com/p/CVAfulRB0aw/ ---->
+
+<div class="container">
+    <div class="word"> <p> Happiest </p> </div>
+   
+
+    <div class="word"> 
+        <p> 21th Birthday </p> 
+        
+    </div>
+
+    <div class="word"> 
+        <p> Poojan  </p>
+        <img src="./poojan-bang.jpg" alt="poojan-with-bangs" class="poojan-1">
+        <img src="./instagram.jpg" alt="instagram" class="poojan-1">
+    </div>
+
+    <div class="word"> 
+        <img src="./giphy.gif" alt="happy-birthday.gifs" class="gif">
+        <img src="./cute ducky.gif" alt="sleepy-duck" class="gif">
+        <p style="font-size: 0.25rem;">Date: 2022/03/18</p>
+    </div>
+  
+  </div>
+  
+</body>
+</html>
